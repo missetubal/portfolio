@@ -39,6 +39,7 @@ export interface GeneralStyleProps {
     maxWidth?: string | number;
     borderPosition?: 'top' | 'bottom' | undefined;
     borderTop?: boolean;
+    border?: string;
     top?: number;
     active?: boolean,
   }
