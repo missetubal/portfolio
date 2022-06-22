@@ -1,0 +1,36 @@
+import React from 'react';
+import { MemojiBackground } from '../../assets/Memoji Background';
+import { Container, Left, MemoImage, Right, Text } from './About.style';
+import AboutMemoji from '../../assets/Memoji/AboutMemoji.png'
+import SocialMedia from '../../components/SocialMedia/SocialMedia.component';
+
+
+const About: React.FC = () => {
+    return (
+        <Container>
+            <SocialMedia />
+            <Left>
+                <MemojiBackground />
+                <MemoImage src={AboutMemoji} />
+            </Left>
+            <Right>
+                <Text>
+                    Olá! Meu nome é Michelle e eu tenho 24 anos. Sou formada em Engenharia Elétrica e  estou fazendo Pós Graduação em Engenharia de Software.
+                </Text>
+                <Text>
+                    Desde que me lembro sempre fui apaixonada pela área de programação e robótica, desde desafios simples
+                    a problemas complexos de lógica.
+                </Text>
+                <Text>
+                    Atualmente trabalho com front-end no time de mobile de um cripto banco e tenho focado meus estudos em assuntos relacionados
+                    ao desenvolvimento mobile e ambiente de testes.
+                </Text>
+                <Text>Eu amo aprender e estou sempre disposta a dar o meu melhor em tudo que faço!
+                    Caso queira saber mais sobre mim, acesse entre em contato comigo. (: </Text>
+            </Right>
+
+        </Container>
+    );
+}
+
+export default About;

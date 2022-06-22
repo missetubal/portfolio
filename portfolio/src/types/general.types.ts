@@ -1,6 +1,7 @@
 export interface GeneralStyleProps {
     display?: string;
     flex?: number,
+    textDecoration?: string, 
     alignItems?: string,
     justifyContent?: string,
     width?: number | string,
