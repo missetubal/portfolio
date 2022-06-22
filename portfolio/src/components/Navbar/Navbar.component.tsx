@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Moon from '../../assets/MoonBlack';
+import Face from '../../assets/Memoji/Face.png'
 import { Image, NavContainer, NavLeft, NavOptions, NavRight, Pages, SwitchColor, TextLeft } from './Navbar.styles';
 
 const Navbar: React.FC = () => {
@@ -7,7 +8,7 @@ const Navbar: React.FC = () => {
   return (
     <NavContainer>
       <NavLeft>
-        <Image src='../../../public/assets/face.png'/>
+        {/* <Image src={Face}/> */}
         <TextLeft>Michelle Setúbal</TextLeft>
       </NavLeft>
       <NavRight>
@@ -16,7 +17,7 @@ const Navbar: React.FC = () => {
           <Pages href='/about'>Sobre</Pages>
           <Pages href=''>Experiências</Pages>
           <Pages href='/projects'>Projetos</Pages>
-          <Pages href='/contact'>Contato</Pages>
+          <Pages href='/contact'>Serviços</Pages>
         </NavOptions>
         <SwitchColor onClick={()=>setIsDark(!isDark)}>
           <Moon />
