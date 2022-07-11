@@ -9,9 +9,9 @@ export const Container = styled.div`
 export const Left = styled.div``
 export const MemoImage = styled.img`
     position: absolute;
-    left:5%;
-    top: 15%;
-    width: 32%;
+    left:6%;
+    top: 14%;
+    width: 34%;
 `
 export const Right = styled.div`
     padding: 40px;
