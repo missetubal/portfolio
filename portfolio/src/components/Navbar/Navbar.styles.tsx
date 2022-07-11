@@ -6,6 +6,10 @@ export const NavContainer = styled.nav`
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+    @media screen and (max-width:420px) {
+        padding-left:0px
+    
+    }
     
 `
 export const NavOptions = styled.ul`
