@@ -6,6 +6,7 @@ export const NavContainer = styled.nav`
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+    
 `
 export const NavOptions = styled.ul`
     margin-right: 64px;
@@ -31,12 +32,17 @@ export const TextLeft = styled.p`
 export const NavRight = styled.div`
     display: flex;
     flex-direction: row;
+    @media screen and (max-width:420px) {
+        display: none;
+    
+    }
+   
 `
 
 export const SwitchColor = styled.a`
     align-items: center;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 10px;   
 `
 
 export const Image = styled.img`
