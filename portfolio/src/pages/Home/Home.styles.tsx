@@ -1,79 +1,122 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { GeneralStyleProps } from "../../types/general.types";
+// import {bounce} from 'react-animation'
 
 export const Container = styled.div`
-    margin-top: 100px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    @media screen and (max-width: 412px){
+        flex-wrap: wrap;
+    }
 `
 
 export const Left = styled.div`
- @media (max-width: 950px) {
+    width: 60%;
+    align-items: center;
+    margin-left: 10%;
+    @media screen and (max-width: 800px){
+        width: 100%;
         margin-left: 90px;
     }
 `
 
-
 export const HelloContainer = styled.div`
     background: linear-gradient(90deg, #32F6F6 0%, #A6A79F 100%);
     border-radius: 50px 50px 50px 0px;
-    width: 197px;
-    height: 72px;
+    max-width: 127px;
+    max-height: 72px;
+    animation: 2s ${keyframes `{bounce}`} infinity;
    
 `
 export const TextHello = styled.p`
     color: #FFFFFF;
-    font-size: 36px;
+    font-size: 1.3rem;
     text-align: center;
     align-items: center;
-    padding: 14px 0px;
+    padding: 14px 30px;
     font-weight: 700;
 `
+
 export const NameContainer = styled.div`
     display: flex;
     flex-direction: row;
-    line-height: 0;
-    @media (max-width: 950px) {flex-direction: column;}
+    @media screen and (max-width:1190px) {
+        flex-direction: column;
+    }
 `
+
 export const NameText = styled.p<GeneralStyleProps>`
-    font-size: ${props => props.fontSize || 50}px;
+    font-size: 60px;
     text-decoration: ${props => props.textDecoration || 'none'};
     color: ${props => props.color || '#000000'};
     font-weight: ${props => props.fontWeight || 400};
     line-height: 0;
-    @media (max-width: 950px) {
-        width: 100%;
+    word-wrap: break-word;
+    @media screen and (max-width: 412px){
+        font-size: 10vw;
     }
 `
-export const Text = styled
+export const Subtitle = styled.p`
+    font-weight: 300;
+    font-size: 30px;
+    @media screen and (max-width: 412px){
+        font-size: 6vw;
+    }
+    @media screen and (max-width: 850px) {
+        margin-bottom: 10px;
+    }
+`
+
+export const TextCotainer = styled.div`
+    width: 100%;
+    display: flex;
+    @media screen and (max-width: 1020px) {
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 375px){
+        font-size: 5vw;
+    }
+`
 
 export const Right = styled.div`
-    margin-right: 100px;
-    @media (max-width: 950px) {
-        margin-left: 100px;
-    }
+    width: 40%;
    
 `
 export const Memoji = styled.img`
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    left: 65%;
-    top: 13%;
-    @media (max-width: 950px) {
-        top: 15%;
-        left: 55%;
-    }
-   
+    width: 100%;
+    max-width: 560vh;
+    height: 100%;
+    max-height: 560vh;
 `
 
-export const MemojiImage = styled.div``
+export const MemojiImage = styled.div`
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 750px){
+        margin-left: 25px;
+    }  
+`
+
 export const ButtonContainer = styled.div`
-    margin-top: 90px;
-    @media (max-width: 950px) {
+    margin-top: 10%;
+    width: 100%;
+    
+    @media screen and (max-width: 850px) {
         display: flex;
         flex-direction: column;
+        width: 50%;
+    }
+
+    @media screen and (max-width: 412px){
+        width: 50%;
     }
 `
 
@@ -87,11 +130,14 @@ export const CVButton = styled.a`
     color: #FEFEFE;
     text-decoration: none;
     margin-right: 20px;
-    max-width: 170px;
     text-align: center;
+    min-width: 180px;
 
-    @media (max-width: 950px) {
+    @media screen and (max-width: 850px) {
         margin-bottom: 20px;
+        width: 100%;
+        font-size: 15px;
+        padding: 15px;
     }
 `
 export const GetInTouchButton = styled.a`
@@ -105,4 +151,11 @@ export const GetInTouchButton = styled.a`
     text-decoration: none;
     max-width: 170px;
     text-align: center;
+    min-width: 180px;
+
+    @media screen and (max-width: 850px) {
+        padding: 16px 28px;
+        width: 100%;
+        font-size: 15px;
+    }
 `
