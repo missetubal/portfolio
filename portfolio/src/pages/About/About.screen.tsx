@@ -1,5 +1,4 @@
 import React from 'react';
-import { MemojiBackground } from '../../assets/Memoji Background';
 import { Container, Left, MemoImage, Right, Text } from './About.style';
 import AboutMemoji from '../../assets/Memoji/AboutMemoji.png'
 import SocialMedia from '../../components/SocialMedia/SocialMedia.component';
@@ -19,6 +18,7 @@ const About: React.FC = () => {
                     <MemoImage src={AboutMemoji} />
                 </Left>
                 <Right>
+                    <h1>Sobre Mim</h1>
                     <Text>
                         Olá! Meu nome é Michelle e eu tenho 24 anos. Sou formada em Engenharia Elétrica e  estou fazendo Pós Graduação em Engenharia de Software.
                     </Text>
