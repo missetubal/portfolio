@@ -12,7 +12,7 @@ const AnimatedRoute: React.FC = () => {
     return (
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
-                <Route path='/' element={<Home />} />
+                <Route path='/portfolio/' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/projects' element={<Projects />} />
                 <Route path='/qualifications' element={<Qualifications />} />
