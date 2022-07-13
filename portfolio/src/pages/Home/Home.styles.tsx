@@ -6,9 +6,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
+    margin-top: 5%;
     @media screen and (max-width: 412px){
         flex-wrap: wrap;
     }
@@ -84,6 +82,7 @@ export const TextCotainer = styled.div`
 
 export const Right = styled.div`
     width: 40%;
+    margin-right: 7%;
    
 `
 export const Memoji = styled.img`
@@ -137,7 +136,7 @@ export const CVButton = styled.a`
         margin-bottom: 20px;
         width: 100%;
         font-size: 15px;
-        padding: 15px;
+        padding: 15px 25px;
     }
 `
 export const GetInTouchButton = styled.a`
